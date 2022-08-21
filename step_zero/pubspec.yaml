@@ -1,0 +1,84 @@
+name: step_zero
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0-271.4.beta <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # intl gen
+  intl: ^0.17.0
+  intl_utils: ^2.7.0
+  # value types
+  equatable: ^2.0.3
+  # functional programming
+  dartz: ^0.10.1
+  # device previews
+  device_preview: ^1.1.0
+  # device previews, screenshots
+  screenshot_modes: ^1.0.1
+  # responsive
+  responsive_framework: ^0.2.0
+  # md3 color space utilities
+  material_color_utilities: ^0.2.0
+  # color theme power
+  flex_color_scheme: ^5.1.0
+  # shared prefs
+  shared_preferences: ^2.0.15
+  # cross plat replacement of dart io
+  universal_io: ^2.0.4
+  # universal db support
+  hive: ^2.2.3
+  # dynamic color support for android, desktop
+  dynamic_color: ^1.5.3
+  # color picker for theme support
+  flex_color_picker: ^2.5.0
+
+dependency_overrides: 
+  material_color_utilities: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # code metrrics
+  dart_code_metrics: ^4.17.0
+  # mocking
+  mocktail: ^0.3.0
+  # better goldens
+  golden_toolkit: ^0.13.0
+  # page object model test patterns
+  page_object: ^0.2.0
+  # bdd patterns for unit, widget testing
+  given_when_then: ^0.2.0
+
+  # more opinated lint
+  lint: ^1.8.2
+
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
+    - google_fonts/
+flutter_intl:
+  enabled: true   
+  class_name: S   
+  main_locale: en 
+  arb_dir: lib/src/localization
+  output_dir: lib/src/localization_gen
+  use_deferred_loading: false
+
+  
