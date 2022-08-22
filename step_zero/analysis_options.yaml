@@ -77,13 +77,16 @@ dart_code_metrics:
     - prefer-trailing-comma
     - prefer-conditional-expressions
     - no-equal-then-else
+    - avoid-duplicate-exports
     - avoid-global-state
     - avoid-ignoring-return-value
     - avoid-missin-enum-constant-in-map
     - avoid-nested-conditional-expressions:
         acceptance-level:  2
     - avoid-non-null-assertion
+    - avoid-shrink-wrap-in-lists
     - avoid-throw-in-catch-block
+    - avoid-top-level-members-in-tests
     - avoid-unnecessary-type-assertions
     - avoid-unnecessary-type-casts
     - avoid-unrelated-type-assertions
@@ -91,16 +94,18 @@ dart_code_metrics:
     - binary-expression-operand-order
     - double-literal-format
     - member-ordering-extended:
-        alphabetize: true
-        order: 
-          - public-fields
-          - private-fields
-          - constructors 
+        order:
+          - build-method
+          - init-state-method
+          - did-change-dependencies-method
+          - did-update-widget-method
+          - dispose-method
     - newline-before-return
     - no-boolean-literal-compare 
     - no-empty-block
     - no-object-declaration
     - prefer-conditional-expressions
+    - prefer-correct-edge-insets-constructor
     - prefer-correct-identifier-length:
         exceptions: [ 'z' ]
         max-identifier-length: 30
@@ -124,14 +129,17 @@ dart_code_metrics:
     - prefer-extracting-callbacks:
         ignored-named-arguments:
           - onPressed
+        allowed-line-count: 3
     - avoid-wrapping-in-padding
     - prefer-const-border-radius 
     - prefer-intl-name
     - provide-correct-intl-args
     - prefer-async-await
+    - prefer-enums-by-name
     - prefer-immediate-return
     - avoid-collection-methods-with-unrelated-types
-    - prefer-moving-to-variable
+    - prefer-moving-to-variable:
+        allowed-duplicated-chains: 3
     - prefer-commenting-analyzer-ignores
     - avoid-non-ascii-symbols
     - avoid-boder-all

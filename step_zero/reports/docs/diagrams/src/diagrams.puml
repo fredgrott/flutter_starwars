@@ -1,0 +1,11 @@
+@startuml
+set namespaceSeparator ::
+
+class "step_zero::src::my_app.dart::MyApp" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "step_zero::src::my_app.dart::MyApp"
+
+
+@enduml
