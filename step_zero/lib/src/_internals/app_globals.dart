@@ -2,10 +2,10 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 
-/// KAppData to hold global non mutable data. No need to
+/// AppGlobals to hold global non mutable data. No need to
 /// make as singleton as all its fields are set up s\as non-mutable.
 /// In case of this class that means static const fields aas then they only
 /// will be stored once as aunique value at compile time.
@@ -15,7 +15,7 @@ import 'package:logging/logging.dart';
 ///
 ///
 /// @author Fredrick Allan Grott
-class AppData {
+class AppGlobals {
   static const kAppAuthor = "Fredrick Allan Grott";
 
   static const kAppCopyright = "© 2022";
@@ -65,5 +65,5 @@ class AppData {
 
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
-  AppData._();
+  AppGlobals._();
 }
