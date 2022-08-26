@@ -6,9 +6,12 @@
 
 #include "generated_plugin_registrant.h"
 
+#include <catcher/catcher_plugin.h>
 #include <dynamic_color/dynamic_color_plugin_c_api.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
+  CatcherPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("CatcherPlugin"));
   DynamicColorPluginCApiRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("DynamicColorPluginCApi"));
 }
