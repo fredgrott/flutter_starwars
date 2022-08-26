@@ -5,17 +5,9 @@
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 
-/// AppGlobals to hold global non mutable data. No need to
-/// make as singleton as all its fields are set up s\as non-mutable.
-/// In case of this class that means static const fields aas then they only
-/// will be stored once as aunique value at compile time.
-///
-/// This is the fourth form of Singleton where we just make the constructor private as
-/// we want to prevent the app developers from extending this class.
-///
-///
-/// @author Fredrick Allan Grott
-class AppGlobals {
+
+class AppModel {
+
   static const kAppAuthor = "Fredrick Allan Grott";
 
   static const kAppCopyright = "© 2022";
@@ -61,9 +53,9 @@ class AppGlobals {
 
   static NavigatorState? get nav => kRootNavKey.currentState;
 
-  static Logger get appLoggger => Logger(kAppTitle);
+  
 
-  // This class is not meant to be instantiated or extended; this constructor
-  // prevents instantiation and extension.
-  AppGlobals._();
+
+
+  AppModel._();
 }

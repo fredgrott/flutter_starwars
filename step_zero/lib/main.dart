@@ -6,5 +6,7 @@ void main() async {
   // this initializes the logging system
   AppLogging();
 
+  appLogger.info("app initialized");
+
   runApp(MyApp());
 }

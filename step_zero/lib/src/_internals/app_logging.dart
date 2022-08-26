@@ -8,11 +8,13 @@ import 'package:flutter/foundation.dart';
 import 'package:logging/logging.dart';
 import 'package:logging_appenders/logging_appenders.dart';
 
+Logger appLogger = Logger("FlutterStarwars");
+
 /// AppLogging singleton to configure app logging, ti's called via
 /// ```dart
 /// AppLogging();
 /// ```
-/// 
+///
 /// @author Fredrick Allan Grott
 class AppLogging {
   static late AppLogging _singleton;
