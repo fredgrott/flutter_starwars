@@ -4,6 +4,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:lifecycle/lifecycle.dart';
+import 'package:step_zero/src/_internals/themes/app_theme_data.dart';
 
 class MyApp extends StatefulWidget {
   final GlobalKey<NavigatorState> navigatorKey;
@@ -25,6 +27,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       navigatorKey: widget.navigatorKey,
+      navigatorObservers: [defaultLifecycleObserver],
+      theme: appLightThemeData,
+      darkTheme: appDarkThemeData,
+      themeMode: ThemeMode.dark,
     );
   }
 }

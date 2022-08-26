@@ -12,6 +12,20 @@ void main() async {
   // We want to grab this so that we can do proper image asset cache loading
   // at app startup.
   final binding = WidgetsFlutterBinding.ensureInitialized();
+
+  // calls this as last step of WidgetsflutterBinding initialization
+  binding.addPostFrameCallback((_) async {
+    final Element? context = binding.renderViewElement;
+    if (context != null) {
+      for (final asset in AppModel.assetList) {
+        precacheImage(
+          AssetImage(asset),
+          context,
+        );
+      }
+    }
+  });
+
  
 
 

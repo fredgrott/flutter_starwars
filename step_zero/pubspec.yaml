@@ -44,6 +44,7 @@ dependencies:
   catcher: ^0.6.9
   logging: ^1.0.2
   logging_appenders: ^1.0.0
+  lifecycle: ^0.6.0
   provider: ^6.0.3
   path_provider: ^2.0.11
   google_fonts: ^3.0.1

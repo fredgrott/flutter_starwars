@@ -4,10 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-
-
 class AppModel {
-
   static const kAppAuthor = "Fredrick Allan Grott";
 
   static const kAppCopyright = "© 2022";
@@ -53,9 +50,12 @@ class AppModel {
 
   static NavigatorState? get nav => kRootNavKey.currentState;
 
-  
+  static List<String> assetList = <String>[
+    "images/flutter_logo.png",
+    "images/3.0x/flutter_logo.png",
+    "images/2.0x/flutter_logo.png",
 
-
+  ];
 
   AppModel._();
 }
