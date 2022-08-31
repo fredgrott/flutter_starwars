@@ -6,7 +6,8 @@
 import 'package:flutter/material.dart';
 import 'package:lifecycle/lifecycle.dart';
 
-import 'package:step_zero/src/_internals/themes/system_flex_color_scheme.dart';
+
+import 'package:step_zero/src/_internals/themes/system_them_data.dart';
 
 
 
@@ -31,8 +32,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       navigatorKey: widget.navigatorKey,
       navigatorObservers: [defaultLifecycleObserver],
-      theme: sysLightFlexColorScheme.toTheme,
-      darkTheme: sysDarkFlexColorScheme.toTheme,
+      theme: systemThemeDataLight,
+      darkTheme: systemThemeDataDark,
       themeMode: ThemeMode.dark,
     );
   }

@@ -30,7 +30,8 @@ dependencies:
   # md3 color space utilities
   material_color_utilities: ^0.2.0
   # color theme power
-  flex_color_scheme: ^5.1.0
+  flex_color_scheme: ^6.0.0
+  
   # shared prefs
   shared_preferences: ^2.0.15
   # cross plat replacement of dart io
@@ -52,6 +53,7 @@ dependencies:
 
 dependency_overrides: 
   material_color_utilities: ^0.2.0
+  
 
 dev_dependencies:
   flutter_test:
