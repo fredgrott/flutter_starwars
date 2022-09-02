@@ -51,9 +51,9 @@ class AppModel {
   static NavigatorState? get nav => kRootNavKey.currentState;
 
   static List<String> assetList = <String>[
-    "images/flutter_logo.png",
-    "images/3.0x/flutter_logo.png",
-    "images/2.0x/flutter_logo.png",
+    "assets/images/flutter_logo.png",
+    "assets/images/3.0x/flutter_logo.png",
+    "assets/images/2.0x/flutter_logo.png",
 
   ];
 
